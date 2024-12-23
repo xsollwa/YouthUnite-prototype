@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<!-- 
+*Title: YouthUnite
+*Date: June 26, 2024 - Present
+*Authors: Ruzanna Gaboyan, Benjamin Jeanty
+*For: Congressional App Competition 
+-->
+<html>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>YouthUnite</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    
+    <!-- navbar -->
+      <div class = "navbar">
+          <div class = "container">
+              <a class = "org-name" href = "index.html"> Youth<span>Unite</span></a>
+              <img id = "mobile-cta" class= "mobile-menu" src="images/menu.svg" alt= "Open nav">
+              <nav id = "nav", class = "nav">              
+                <img id = "mobile-exit" class= "mobile-exit" src="images/mobileExit.svg" alt = "Close nav">
+                <ul class = "main-nav">
+                  <li class="current" ><a href = "index.html">Home</a></li>
+                  <li><a href = "events.html">Upcoming Events</a></li>
+                  <li><a href = "learn.html">Learn</a></li>
+                  <li><a href = "contact.html">Contact Us</a></li>
+                  <li class="host-event"><a href = "host.html">Host an Event</a></li>
+                </ul>
+
+              </nav>
+          </div>
+      </div>
+    <!--end of nav bar -->
+
+    <!--hero section -->
+      <section class = "hero">
+        <div class = "container">
+          <div class = "left-col">
+            <p class = "subhead">Empowering youth to make changes</p>             
+            <h1>Unite <br> Empower <br> Change</h1> 
+            <div class = "hero-cta">
+              <a href = "events.html" class = "primary-cta"> Get Involved Now </a>
+              <a href = "https://youtu.be/XYVGgdDJ8b0?si=-bd6krPamgs9WjeS" class = "learn-cta" target="_blank"> 
+                <img src = "images/bulb.svg" alt = ""> What is YouthUnite?              
+              </a>                
+            </div>
+          </div>
+          <div class = "right-col">
+            <img src = "images/youthUniteLogo.png" class ="hero-img" alt = "Hero Logo">  
+          </div>
+        </div>
+      </section>
+    <!--end of hero section -->
+
+    <!-- goals section -->
+      <section class = "goals-section"> 
+        <h2>Our Goals</h2>
+        <div class = "container">         
+          <div class = "goals-left">
+            <img src="images/unite.svg" alt="Unite Image">
+            <h3>Unite Youth</h3>
+            <p class = "pgh">We want to unite and connect like-minded youth</p>
+          </div>  
+          <div class = "goals-middle">
+              <img src="images/empower.svg" alt="Empower Image">
+              <h3>Empower Youth</h3>
+              <p class = "pgh">We want to empower youth to not be afraid to take action</p>
+          </div>   
+          <div class = "goals-right">
+            <img src="images/change.svg" alt="Change Image">
+            <h3>Make Changes</h3>
+            <p class = "pgh">We want to make our world a better place by encouraging positive change</p>
+          </div>      
+        </div>     
+      </section>
+    <!--end of goals section-->
+
+    <!--footer-->
+    <section class="footer">
+      <section class="footer">
+        <div class="container">
+          <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="events.html">Upcoming Events</a>
+            <a href="learn.html">Learn</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="host.html">Host an Event</a>
+          </div>
+          <div class="footer-content">
+            <img src="images/youthUniteLogo.png" class="footer-img" alt="YouthUnite Logo">
+            <div class="footer-contact">
+              <p><strong>© YouthUnite 2024</strong></p>
+              <p><i>Any questions? Reach out via Email</i></p>
+              <a href="mailto:youthunite@gmail.com">youthunite@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </section> 
+    </section>
+    <!--end of footer-->
+
+    <!--script-->
+    <script>
+          var mobileBtn = document.getElementById('mobile-cta');
+          var nav = document.querySelector('nav');
+          var mobileBtnExit = document.getElementById('mobile-exit');
+          mobileBtn.addEventListener('click', () => {
+              nav.style.display = 'block';
+          })    
+        mobileBtnExit.addEventListener('click', () => {
+            nav.style.display = 'none';
+        })     
+    </script>
+    <!--end of script-->
+    
+  </body>
+
+</html>
